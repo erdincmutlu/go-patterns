@@ -53,10 +53,10 @@ func (b *BankAccountCommand) Call() {
 
 func main() {
 	ba := BankAccount{}
-	cmd := BankAccountCommand{&ba, Deposit, 100}
+	cmd := NewBankAccountCommand(&ba, Deposit, 100)
 	cmd.Call()
 	fmt.Println(ba)
-	cmd2 := BankAccountCommand{&ba, Withdraw, 50}
+	cmd2 := NewBankAccountCommand(&ba, Withdraw, 50)
 	cmd2.Call()
 	fmt.Println(ba)
 }
