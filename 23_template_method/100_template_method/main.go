@@ -14,7 +14,7 @@ func PlayGame(g Game) {
 	for !g.HaveWinner() {
 		g.TakeTurn()
 	}
-	fmt.Printf("Player &%d winds\n", g.WinningPlayer())
+	fmt.Printf("Player %d winds\n", g.WinningPlayer())
 }
 
 type chess struct {
