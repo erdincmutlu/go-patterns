@@ -32,6 +32,9 @@ func Print(e Expression, sb *strings.Builder) {
 			sb.WriteString(")")
 		}
 	}
+
+	// breaks OCP
+	// will work incorrectly on missing case
 }
 
 func main() {
